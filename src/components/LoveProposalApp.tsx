@@ -1,10 +1,16 @@
-import { useState, useEffect, useRef } from 'react';
-import { 
-  Heart, Sparkles, Stars, Send, Gift, Music, 
-  Moon, Sun, Mail, MailOpen, ArrowLeft, RefreshCw,
-  HeartHandshake, PartyPopper, Calendar, MessageCircle
+import { AnimatePresence, motion } from 'framer-motion';
+import {
+  ArrowLeft,
+  Calendar,
+  Heart,
+  Mail, MailOpen,
+  Music,
+  RefreshCw,
+  Send,
+  Sparkles, Stars,
+  Sun
 } from 'lucide-react';
-import { motion, AnimatePresence, useSpring } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 
 type Stage = 'envelope' | 'proposal' | 'accepted';
 
